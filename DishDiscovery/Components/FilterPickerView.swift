@@ -11,7 +11,7 @@ struct FilterPickerView: View {
     @ObservedObject var viewModel: RecipeViewModel
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .center, spacing: 0) {
             Text("Filter")
                 .foregroundStyle(Color("FGSecondary"))
                 .font(.footnote)

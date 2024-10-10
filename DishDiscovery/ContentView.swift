@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack {
+                VStack(spacing: 10) {
                     Text("Dish Discovery")
                         .font(.system(size: 40, weight: .bold, design: .rounded))
                         .foregroundColor(Color("ButtonBGColor"))
@@ -24,11 +24,8 @@ struct ContentView: View {
                     HStack {
                         FilterPickerView(viewModel: viewModel)
                         
-                        Spacer()
-                        
                         SortOptionPickerView(viewModel: viewModel)
                     }
-                    .padding()
                     
                     if viewModel.sortedRecipes.isEmpty {
                         Text("No recipes available")

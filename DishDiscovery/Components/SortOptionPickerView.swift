@@ -11,7 +11,7 @@ struct SortOptionPickerView: View {
     @ObservedObject var viewModel: RecipeViewModel
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .center, spacing: 0) {
             Text("Sort by")
                 .foregroundStyle(Color("FGSecondary"))
                 .font(.footnote)
