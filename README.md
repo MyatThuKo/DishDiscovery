@@ -56,6 +56,7 @@ git clone https://github.com/MyatThuKo/DishDiscovery.git
   - I have used Snapshot testing previously at M1 Finance, but wasn't able to find the package we used. 
 
 ## External Code and Dependencies: 
+Installed using Swift Package Manager
 - SDWebImage
   - SDWebImageSwiftUI: To use `WebImage` for efficient image loading and caching in SwiftUI views 
 - Alamofire
