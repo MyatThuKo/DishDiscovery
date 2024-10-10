@@ -74,7 +74,6 @@ struct RecipeDetailsView: View {
             .padding(20)
         }
         .background(Color("BackgroundColor"))
-        .toolbar(.hidden)
     }
     
     /// Method from https://stackoverflow.com/a/41166559
