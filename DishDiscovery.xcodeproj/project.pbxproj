@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E22E335A2CB80D6A003B33F4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E22E33592CB80D6A003B33F4 /* SDWebImageSwiftUI */; };
+		E22E335D2CB80D72003B33F4 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = E22E335C2CB80D72003B33F4 /* YouTubeiOSPlayerHelper */; };
+		E22E33612CB80D8C003B33F4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E22E33602CB80D8C003B33F4 /* Alamofire */; };
+		E22E33642CB80DA7003B33F4 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E22E33632CB80DA7003B33F4 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E22E331C2CB807EC003B33F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22E33612CB80D8C003B33F4 /* Alamofire in Frameworks */,
+				E22E335A2CB80D6A003B33F4 /* SDWebImageSwiftUI in Frameworks */,
+				E22E33642CB80DA7003B33F4 /* SDWebImage in Frameworks */,
+				E22E335D2CB80D72003B33F4 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 				E22E330C2CB807EA003B33F4 /* DishDiscovery */,
 				E22E331E2CB807EC003B33F4 /* DishDiscoveryTests */,
 				E22E33282CB807EC003B33F4 /* DishDiscoveryUITests */,
+				E22E335F2CB80D8C003B33F4 /* Frameworks */,
 				E22E330B2CB807EA003B33F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +102,13 @@
 				E22E33252CB807EC003B33F4 /* DishDiscoveryUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E22E335F2CB80D8C003B33F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +131,10 @@
 			);
 			name = DishDiscovery;
 			packageProductDependencies = (
+				E22E33592CB80D6A003B33F4 /* SDWebImageSwiftUI */,
+				E22E335C2CB80D72003B33F4 /* YouTubeiOSPlayerHelper */,
+				E22E33602CB80D8C003B33F4 /* Alamofire */,
+				E22E33632CB80DA7003B33F4 /* SDWebImage */,
 			);
 			productName = DishDiscovery;
 			productReference = E22E330A2CB807EA003B33F4 /* DishDiscovery.app */;
@@ -195,6 +218,12 @@
 			);
 			mainGroup = E22E33012CB807EA003B33F4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E22E33582CB80D6A003B33F4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				E22E335B2CB80D72003B33F4 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				E22E335E2CB80D7A003B33F4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E22E33622CB80DA7003B33F4 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E22E330B2CB807EA003B33F4 /* Products */;
 			projectDirPath = "";
@@ -394,6 +423,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DishDiscovery/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +461,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DishDiscovery/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -583,6 +614,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E22E33582CB80D6A003B33F4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		E22E335B2CB80D72003B33F4 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		E22E335E2CB80D7A003B33F4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		E22E33622CB80DA7003B33F4 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E22E33592CB80D6A003B33F4 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22E33582CB80D6A003B33F4 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		E22E335C2CB80D72003B33F4 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22E335B2CB80D72003B33F4 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+		E22E33602CB80D8C003B33F4 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22E335E2CB80D7A003B33F4 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E22E33632CB80DA7003B33F4 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E22E33622CB80DA7003B33F4 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E22E33022CB807EA003B33F4 /* Project object */;
 }
